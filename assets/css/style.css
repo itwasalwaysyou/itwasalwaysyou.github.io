@@ -83,6 +83,22 @@ h6 {
   overflow-y: auto;
 }
 
+
+.up-down-home:hover {
+
+  color:#bc3de2a7
+}
+
+.up-down-home{
+  font-size: 22px;
+  color: #004cff6c;
+  transition: color 0.3s ease; 
+}
+
+.hover-div {
+  text-align: center;
+}
+
 #header .profile img {
   margin: 15px auto;
   display: block;
@@ -374,8 +390,7 @@ img {
 
 .up-down{
   font-size: 22px;
-  color:#122f57
-  
+  color:#122f57;
 }
 
 
