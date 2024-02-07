@@ -275,7 +275,7 @@
         <br>
         <br>
 
-        <img src="assets/img/portfolio/UML.png" alt="">
+        <div class='myImage' href='assets/img/portfolio/UML.png'><img src="assets/img/portfolio/UML.png" alt="" ></div>
 
 
 
@@ -350,6 +350,35 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+
+  <script>
+$(document).ready(function() {
+    $('.myImage').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        image: {
+            titleSrc: function(item) {
+                return item.el.attr('title') || '';
+            },
+            verticalFit: false, 
+            zoom: {
+                enabled: true, 
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+        }
+    });
+});
+  </script>
 
 </body>
 
