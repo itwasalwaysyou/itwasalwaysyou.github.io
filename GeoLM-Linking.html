@@ -153,7 +153,7 @@
               <ul>
                 <li><strong>Category</strong>:GeoLm-Linking (NLP)</li>
                 <li><strong>Date</strong>: Fall 2023</li>
-                <li><strong>Duration</strong>: 3 weeks</li>
+                <li><strong>Duration</strong>: 1 month</li>
                 <li><strong>Conference</strong>: EMNLP 2023</li>
 
 
@@ -187,7 +187,7 @@
               style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5; color: #333; margin-left: 10px;">
               The goal is to create an easily understandable application with a simple interface. The application will
               feature only one input box where users can enter a sentence. Once the user submits the sentence, the
-              system will process it and display the <strong>detected location</strong> names on a <strong><i>drop-down list</i></strong> for the user to view and
+              system will process it and display the detected location names on a bar menu for the user to view and
               select.
             </p>
           </div>
@@ -227,6 +227,8 @@
 
                 </h5>
               </div>
+
+              <br>
               <ul type="a">
                 <li>Retrieve the top 50 locations with the same name from the <i>GeoNames database</i>.</li>
                 <li>Store the geographical information of these items.</li>
@@ -241,6 +243,7 @@
 
                 </h5>
               </div>
+              <br>
               <ul>
                 <li>Search for its 50 nearest neighbors in the GeoNames database.</li>
                 <li>Generate candidate geo-entity embeddings using the GeoLM model.</li>
@@ -272,11 +275,48 @@
 
             <br>
 
+            <div>
+              <div style="text-align: center;">
+                <h5>
+                  <strong>Step 3:</strong> Rank the generated candidates based on cosine similarity and display them on
+                  the map.
+
+                </h5>
+                <br>
+
+                <div
+                style="display: flex;text-align: left; align-items: center; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin: 10px;">
+                <p
+                  style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5; color: #333; margin-left: 10px;">
+                After the predicted data is prepared, let's return to the front-end to check if the user can easily retrieve all the locations from a sentence and to check the probability for a selected location on the map; the circle size should be larger when the probability is higher.
+                </p>
+                </div>
+
+                <p>Let's we go back and try another example:</p>
+                <h5><strong
+                  style="color:#0095ff">Paris</strong> <strong
+                  style="color:rgba(255, 145, 0, 0.798)">in</strong> <strong
+                  style="color:#0095ff">France</strong> &nbsp;&nbsp; VS. &nbsp;&nbsp;<strong
+                  style="color:#0095ff">Paris</strong> <strong
+                  style="color:rgba(255, 145, 0, 0.798)">in</strong> <strong
+                  style="color:#0095ff">Arkansas</strong></h5>
+              </div>
+
+              <div class="col-width-img col-width-2" style="height: 700px; font-size:19px; color: rgb(118, 80, 24);">
 
 
-            <!-- <p>
-              <strong>Step 3:</strong> Rank the generated candidates based on cosine similarity and display them on the map.</li>
-              </p> -->
+                <img src="assets/img/portfolio/linking1.png" alt="">
+              </div>
+              <div class="col-width-img col-width-2 g" style="height: 700px; font-size:19px; color: rgb(118, 80, 24);">
+
+                <img src="assets/img/portfolio/linking2.png" alt="">
+              </div>
+
+
+
+            </div>
+
+
           </div>
         </div>
 
@@ -307,10 +347,10 @@
 
           <h3 style="text-align: center;">Reflection</h3>
 
-          <p>GeoLM-Linking aims to demonstrate GeoLM at EMNLP 2023. In the process of implementing GeoLM-Linking, my
+          <p>GeoLM-Linking is designed and developed to showcase the capabilities of GeoLM at the EMNLP 2023 event. In the process of implementing GeoLM-Linking, my
             primary responsibility was the seamless integration of the GeoLM model into the frontend, with a focus on
             enhancing user interaction. The core objective of this implementation was to analyze and process data and
-            visualize the probability distribution of potential locations on a map.
+            visualize the probability distribution of potential locations on a map. During this project, my primary focus was on improving time complexity to process large volumes of data efficiently. Making user have a better experience.
 
           </p>
         </div>
