@@ -271,6 +271,14 @@ h6 {
   float: left;
 }
 
+.col-width-compare {
+  height: 580px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  float: left;
+}
+
 .row-target{
   height: 330px;
 }
@@ -301,6 +309,15 @@ h6 {
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+  float: left;
+}
+
+.col-width-google {
+
+  min-height: 1px;
+  padding-left: 150px;
+  padding-right: 150px;
   position: relative;
   float: left;
 }
@@ -1245,7 +1262,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #758893;
+  color:  #758893;
   font-size: 14px;
   position: fixed;
   left: 0;
